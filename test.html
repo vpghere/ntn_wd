@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Days Remaining</title>
+  <title>Time Remaining</title>
   <style>
     body {
       display: flex;
@@ -9,12 +9,11 @@
       align-items: center;
       height: 100vh;
       font-family: Arial, sans-serif;
-      overflow: hidden;
     }
     h1 {
       text-align: center;
     }
-    #days{
+    #remaining-time{
       color: red;
       font-size: 60px;
     }
@@ -22,24 +21,31 @@
 </head>
 <body>
   <h1></h1>
-  <h2 id="days"></h2>
+  <h2 id="remaining-time"></h2>
 
   <script>
-    function updateDaysRemaining() {
+    function updateRemainingTime() {
       var currentDate = new Date();
       var targetDate = new Date("March 15, 2025");
-      var timeDiff = targetDate.getTime() - currentDate.getTime();
-      var daysRemaining = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
-      var daysElement = document.getElementById("days");
-      daysElement.innerText = daysRemaining + " Days";
+      var monthsRemaining = (targetDate.getFullYear() - currentDate.getFullYear()) * 12 + targetDate.getMonth() - currentDate.getMonth();
+      var daysRemaining = targetDate.getDate() - currentDate.getDate();
+
+      if (daysRemaining < 0) {
+        monthsRemaining--;
+        var lastMonthDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+        daysRemaining += lastMonthDate.getDate();
+      }
+
+      var remainingTimeElement = document.getElementById("remaining-time");
+      remainingTimeElement.innerText = monthsRemaining + " months and " + daysRemaining + " days";
     }
 
     // Call the update function initially
-    updateDaysRemaining();
+    updateRemainingTime();
 
     // Update the count every second (you can adjust the interval as needed)
-    setInterval(updateDaysRemaining, 1000);
+    setInterval(updateRemainingTime, 1000);
   </script>
 </body>
 </html>
