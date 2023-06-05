@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Days Remaining</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    #remaining-time{
+      color: red;
+      font-size: 60px;
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <h2 id="remaining-time"></h2>
+
+  <script>
+    function updateRemainingTime() {
+      var currentDate = new Date();
+      var targetDate = new Date("March 15, 2025");
+      var timeDiff = targetDate.getTime() - currentDate.getTime();
+
+      var daysRemaining = Math.ceil(timeDiff / (1000 * 3600 * 24));
+      var monthsRemaining = Math.floor(daysRemaining / 30);
+      var daysWithoutMonths = daysRemaining % 30;
+
+      var remainingTimeElement = document.getElementById("remaining-time");
+      remainingTimeElement.innerText = monthsRemaining + " months and " + daysWithoutMonths + " days";
+    }
+
+    // Call the update function initially
+    updateRemainingTime();
+
+    // Update the count every second (you can adjust the interval as needed)
+    setInterval(updateRemainingTime, 1000);
+  </script>
+</body>
+</html>
