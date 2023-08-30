@@ -47,7 +47,7 @@
         function checkInput() {
     var input = document.getElementById("inputBox").value;
     var predefinedText = "..." /* predefined text */;
-    
+
     var minLength = Math.min(input.length, predefinedText.length);
     var mismatchIndex = -1;
 
@@ -65,10 +65,12 @@
     if (mismatchIndex === -1) {
         // Display the image
     } else {
-        var feedback = "Mismatch at position " + (mismatchIndex + 1);
+        var mismatchedPart = input.substring(mismatchIndex);
+        var feedback = "Text mismatch: " + mismatchedPart;
         alert(feedback);
     }
 }
+
 
     </script>
 </body>
