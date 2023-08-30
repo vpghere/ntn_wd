@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect Page</title>
+    <style>
+        /* Center align the button and text area */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+
+        /* Add margin to the button */
+        button {
+            margin-top: 10px;
+        }
+
+        /* Increase the size of the text area */
+        textarea {
+            width: 300px;
+            height: 120px;
+            padding: 5px;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <p>what matters more today? getting enough sleep or working towards my goals: having six-pack abs, making $30,000 each month, and getting into JBIMS? sleep might seem important now, but you've rested enough today. It's time to wake up and go after these amazing, life-changing goals. You definitely can achieve all these great goals. here's some motivation: $30,000 per month is almost Rs. 25 lakhs per month(25,00,000/month), which is a yearly salary for really successful people. If I have six-pack abs, girls might like me more because they usually like that. It's not hard to get six-pack abs - just stay consistent. and getting into JBIMS is super cool. It will make me look really good. motivation: if i got 100%ile then i can get hostel by JB normally living in the south Mumbai will cost around 10 lakh so better i’m getting admission in JB’s hostel I'm going to eat, brush my teeth, and wash my face now. Remember, this day is important. You're talented, so don't waste it on sleep, especially when you've already slept enough.</p>
+    <textarea id="inputBox" placeholder="Type 'hello world'" onkeydown="handleKeyPress(event)"></textarea>
+    <button onclick="checkInput()">Submit</button>
+    <img id="imageDisplay" src="" style="display: none; max-width: 500px; max-height: 500px;">
+
+    <script>
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                event.preventDefault(); // Prevent the default Enter key behavior
+                var inputBox = document.getElementById("inputBox");
+                inputBox.value += "\n"; // Add a new line
+            }
+        }
+
+        function checkInput() {
+    var input = document.getElementById("inputBox").value;
+    var predefinedText = "..." /* predefined text */;
+    
+    var minLength = Math.min(input.length, predefinedText.length);
+    var mismatchIndex = -1;
+
+    for (var i = 0; i < minLength; i++) {
+        if (input[i] !== predefinedText[i]) {
+            mismatchIndex = i;
+            break;
+        }
+    }
+
+    if (mismatchIndex === -1 && input.length !== predefinedText.length) {
+        mismatchIndex = minLength; // If one string is a prefix of the other
+    }
+
+    if (mismatchIndex === -1) {
+        // Display the image
+    } else {
+        var feedback = "Mismatch at position " + (mismatchIndex + 1);
+        alert(feedback);
+    }
+}
+
+    </script>
+</body>
+</html>
