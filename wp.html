@@ -30,8 +30,8 @@
     </style>
 </head>
 <body>
-    <p id="motivationalText" > hello world</p>
-    <textarea id="inputBox" placeholder="Type 'hello world'" onkeydown="handleKeyPress(event)"></textarea>
+    <p id="motivationalText" >one two three</p>
+    <textarea id="inputBox" placeholder="one two three" onkeydown="handleKeyPress(event)"></textarea>
     <button onclick="checkInput()">Submit</button>
     <img id="imageDisplay" src="" style="display: none; max-width: 500px; max-height: 500px;">
 
@@ -46,7 +46,7 @@
 
         function checkInput() {
     var input = document.getElementById("inputBox").value;
-    var predefinedText = "hello world";
+    var predefinedText = "one two three";
 
     var words = predefinedText.split(/\s+/); // Split by spaces
     var mismatchIndex = -1;
