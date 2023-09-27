@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        /* Add your CSS styling here */
+    </style>
+</head>
+<body> <center>
+    <div id="quiz-container">
+        <h1>Good Morning Millionair Vivek</h1>
+        <form id="quiz-form">
+            <!-- Questions and answer input fields go here -->
+            <!-- Example question -->
+            <div class="question">
+                <p>what matters more today? getting enough sleep or working towards my goals:</p>
+                <label for="yes1">Goals</label>
+                <input type="radio" id="yes1" name="answer1" value="Yes">
+                <label for="no1">Sleep</label>
+                <input type="radio" id="no1" name="answer1" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification1" rows="4" cols="50"></textarea>
+            </div>
+            <!-- Repeat the above structure for all 30 questions -->
+            <div class="question">
+                <p>what seems more healthy?</p>
+                <label for="yes2">six-pack abs</label>
+                <input type="radio" id="yes2" name="answer2" value="Yes">
+                <label for="no2">belly</label>
+                <input type="radio" id="no2" name="answer2" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification2" rows="4" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>will making $30,000/month help</p>
+                <label for="yes3">Yes</label>
+                <input type="radio" id="yes3" name="answer3" value="Yes">
+                <label for="no3">No</label>
+                <input type="radio" id="no3" name="answer3" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification3" rows="4" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>getting into JBIMS will help?</p>
+                <label for="yes4">Yes</label>
+                <input type="radio" id="yes4" name="answer4" value="Yes">
+                <label for="no4">No</label>
+                <input type="radio" id="no4" name="answer4" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification4" rows="4" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>sleep might seem important now, but you've rested enough today.</p>
+                <label for="yes5">Enough sleep?</label>
+                <input type="radio" id="yes5" name="answer5" value="Yes">
+                <label for="no5">or good life (money,freedom)</label>
+                <input type="radio" id="no5" name="answer5" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification5" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>It's time to wake up and go after these amazing, life-changing goals</p>
+                <label for="yes6">Yes</label>
+                <input type="radio" id="yes6" name="answer6" value="Yes">
+                <label for="no6">No</label>
+                <input type="radio" id="no6" name="answer6" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification6" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>You definitely can achieve all these great goals.<br>MMO<br>Health<br>MBA enrance<br>BCA</p>
+                <label for="yes7">Yes</label>
+                <input type="radio" id="yes7" name="answer7" value="Yes">
+                <label for="no7">No</label>
+                <input type="radio" id="no7" name="answer7" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification7" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>here's some motivation: $30,000 per month is almost Rs. 25 lakhs per month(25,00,000/month),</p>
+                <label for="yes8">it's cool i will achive it</label>
+                <input type="radio" id="yes8" name="answer8" value="Yes">
+                <label for="no8">sleep?</label>
+                <input type="radio" id="no8" name="answer8" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification8" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>(25,00,000/month), which is a yearly salary for really successful people.0.01% earns this</p>
+                <label for="yes9">going to 0.01% club</label>
+                <input type="radio" id="yes9" name="answer9" value="Yes">
+                <label for="no9">sleep?</label>
+                <input type="radio" id="no9" name="answer9" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification9" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>If I have six-pack abs, girls might like me more because they usually like that.</p>
+                <label for="yes10">Yes</label>
+                <input type="radio" id="yes10" name="answer10" value="Yes">
+                <label for="no10">No</label>
+                <input type="radio" id="no10" name="answer10" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification10" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>It's not hard to get six-pack abs - just stay consistent.</p>
+                <label for="yes11">Yes</label>
+                <input type="radio" id="yes5" name="answer11" value="Yes">
+                <label for="no11">No</label>
+                <input type="radio" id="no11" name="answer11" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification11" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>getting into JBIMS is super cool. It will make me look really good</p>
+                <label for="yes12">Yeahhhhh</label>
+                <input type="radio" id="yes12" name="answer12" value="Yes">
+                <label for="no12">No</label>
+                <input type="radio" id="no12" name="answer12" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification12" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>motivation: if i got 100%ile then i can get hostel by JB normally living in the south Mumbai will cost around 10 lakh so better i’m getting admission in JB’s hostel</p>
+                <label for="yes13">live in south bombay</label>
+                <input type="radio" id="yes13" name="answer13" value="Yes">
+                <label for="no13">No</label>
+                <input type="radio" id="no13" name="answer13" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification13" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>work out now! or get fatter</p>
+                <label for="yes14">work-out now</label>
+                <input type="radio" id="yes14" name="answer14" value="Yes">
+                <label for="no14">get fatter</label>
+                <input type="radio" id="no14" name="answer14" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification14" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>let's wakeup now and shine like bright star</p>
+                <label for="yes15">Yes</label>
+                <input type="radio" id="yes15" name="answer15" value="Yes">
+                <label for="no15">No</label>
+                <input type="radio" id="no15" name="answer15" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea onpaste="return false;" name="justification15" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 16: Is water wet?</p>
+                <label for="yes16">Yes</label>
+                <input type="radio" id="yes16" name="answer16" value="Yes">
+                <label for="no16">No</label>
+                <input type="radio" id="no16" name="answer16" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification16" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 17: Is water wet?</p>
+                <label for="yes17">Yes</label>
+                <input type="radio" id="yes17" name="answer17" value="Yes">
+                <label for="no17">No</label>
+                <input type="radio" id="no17" name="answer17" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification17" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 18: Is water wet?</p>
+                <label for="yes18">Yes</label>
+                <input type="radio" id="yes18" name="answer18" value="Yes">
+                <label for="no18">No</label>
+                <input type="radio" id="no18" name="answer18" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification18" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 19: Is water wet?</p>
+                <label for="yes19">Yes</label>
+                <input type="radio" id="yes19" name="answer19" value="Yes">
+                <label for="no19">No</label>
+                <input type="radio" id="no19" name="answer19" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification19" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 20: Is water wet?</p>
+                <label for="yes20">Yes</label>
+                <input type="radio" id="yes20" name="answer20" value="Yes">
+                <label for="no20">No</label>
+                <input type="radio" id="no20" name="answer20" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification20" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 21: Is water wet?</p>
+                <label for="yes21">Yes</label>
+                <input type="radio" id="yes21" name="answer21" value="Yes">
+                <label for="no21">No</label>
+                <input type="radio" id="no21" name="answer21" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification21" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 22: Is water wet?</p>
+                <label for="yes22">Yes</label>
+                <input type="radio" id="yes22" name="answer22" value="Yes">
+                <label for="no22">No</label>
+                <input type="radio" id="no22" name="answer22" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification22" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 23: Is water wet?</p>
+                <label for="yes23">Yes</label>
+                <input type="radio" id="yes23" name="answer23" value="Yes">
+                <label for="no23">No</label>
+                <input type="radio" id="no23" name="answer23" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification23" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 24: Is water wet?</p>
+                <label for="yes24">Yes</label>
+                <input type="radio" id="yes24" name="answer24" value="Yes">
+                <label for="no24">No</label>
+                <input type="radio" id="no24" name="answer24" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification24" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 25: Is water wet?</p>
+                <label for="yes25">Yes</label>
+                <input type="radio" id="yes25" name="answer25" value="Yes">
+                <label for="no25">No</label>
+                <input type="radio" id="no25" name="answer25" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification25" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 26: Is water wet?</p>
+                <label for="yes26">Yes</label>
+                <input type="radio" id="yes26" name="answer26" value="Yes">
+                <label for="no26">No</label>
+                <input type="radio" id="no26" name="answer26" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification26" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 27: Is water wet?</p>
+                <label for="yes27">Yes</label>
+                <input type="radio" id="yes27" name="answer27" value="Yes">
+                <label for="no27">No</label>
+                <input type="radio" id="no27" name="answer27" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification27" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 28: Is water wet?</p>
+                <label for="yes28">Yes</label>
+                <input type="radio" id="yes28" name="answer28" value="Yes">
+                <label for="no28">No</label>
+                <input type="radio" id="no28" name="answer28" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification28" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 29: Is water wet?</p>
+                <label for="yes29">Yes</label>
+                <input type="radio" id="yes29" name="answer29" value="Yes">
+                <label for="no29">No</label>
+                <input type="radio" id="no29" name="answer29" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification29" rows="5" cols="50"></textarea>
+            </div>
+            <div class="question">
+                <p>Question 30: Is water wet?</p>
+                <label for="yes30">Yes</label>
+                <input type="radio" id="yes30" name="answer30" value="Yes">
+                <label for="no30">No</label>
+                <input type="radio" id="no30" name="answer30" value="No">
+                <p class="justification">Justification (at least 30 words):</p>
+                <textarea name="justification30" rows="5" cols="50"></textarea>
+            </div>
+            <!-- Add more questions following the same structure -->
+            <!-- Question 4 through Question 30 -->
+
+            <button type="button" id="next-button">Next</button>
+        </form>
+        <marquee><h2>Don't Cheat with your own slef</h2></marquee>
+        <img id="hidden-image" style="display: none;" alt="Hidden Image" width="400" height="400">
+
+    </div>
+    </center>
+
+    <script>
+        const quizForm = document.getElementById('quiz-form');
+        const nextButton = document.getElementById('next-button');
+        const hiddenImage = document.getElementById('hidden-image');
+        let currentQuestion = 1;
+
+        // Handle the "Next" button click
+        nextButton.addEventListener('click', function () {
+            const answer = document.querySelector(`input[name="answer${currentQuestion}"]:checked`);
+            const justification = document.querySelector(`textarea[name="justification${currentQuestion}"]`).value;
+
+            if (answer && countWords(justification) >= 30) {
+                currentQuestion++;
+                if (currentQuestion > 30) {
+                    // All questions answered, reveal the hidden image
+                    const encryptedURL = "aHR0cHM6Ly9jZG4uYnJpdGFubmljYS5jb20vMTcvMTU1MDE3LTA1MC05QUM5NkZDOC9FeGFtcGxlLVFSLWNvZGUuanBn";
+                    const decryptedURL = atob(encryptedURL);
+                    hiddenImage.src = decryptedURL;
+                    hiddenImage.style.display = 'block';
+                    nextButton.style.display = 'none'; // Hide the "Next" button
+                } else {
+                    // Move to the next question
+                    showQuestion(currentQuestion);
+                }
+            } else {
+                alert('Please select an answer and provide a valid justification with at least 30 words.');
+            }
+        });
+
+        // Function to count words in a string
+        function countWords(inputString) {
+            return inputString.split(/\s+/).filter(word => word.length > 0).length;
+        }
+
+        // Function to show a specific question
+        function showQuestion(questionNumber) {
+            const questions = document.querySelectorAll('.question');
+            questions.forEach(question => {
+                question.style.display = 'none';
+            });
+            const currentQuestionElement = document.querySelector(`.question:nth-child(${questionNumber})`);
+            if (currentQuestionElement) {
+                currentQuestionElement.style.display = 'block';
+            }
+        }
+
+        // Initially, show the first question
+        showQuestion(currentQuestion);
+    </script>
+</body>
+</html>
