@@ -47,7 +47,7 @@
                 <textarea onpaste="return false;" name="justification3" rows="4" cols="50"></textarea>
             </div>
             <div class="question">
-                <img src="https://www.jbims.edu/uploads/homebanner/jbims_img-1.jpg">
+                <img src="https://www.jbims.edu/uploads/homebanner/jbims_img-1.jpg" height="500" widhth="800">
                 <p>getting into JBIMS will help?</p>
                 <label for="yes4">Yes</label>
                 <input type="radio" id="yes4" name="answer4" value="Yes">
@@ -57,7 +57,7 @@
                 <textarea onpaste="return false;" name="justification4" rows="4" cols="50"></textarea>
             </div>
             <div class="question">
-                <img src="https://d184tzdj06zb0d.cloudfront.net/images/1596186645woman%20well%20rested%20after%20comfortable%20sleep.jpg">
+                <img src="https://d184tzdj06zb0d.cloudfront.net/images/1596186645woman%20well%20rested%20after%20comfortable%20sleep.jpg" height="500" widhth="800">
                 <p>sleep might seem important now, but you've rested enough today.</p>
                 <label for="yes5">Enough sleep?</label>
                 <input type="radio" id="yes5" name="answer5" value="Yes">
@@ -338,7 +338,7 @@
             const answer = document.querySelector(`input[name="answer${currentQuestion}"]:checked`);
             const justification = document.querySelector(`textarea[name="justification${currentQuestion}"]`).value;
 
-            if (answer && countWords(justification) >= 30) {
+            if (answer && countWords(justification) >= 10) {
                 currentQuestion++;
                 if (currentQuestion > 30) {
                     // All questions answered, reveal the hidden image
